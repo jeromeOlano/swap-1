@@ -1,0 +1,187 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --Poppins: "Poppins", cursive;
+    --light-black: #2e2c2caf;
+    --bggardient: linear-gradient(to bottom,
+            #28febd,
+            #1db688);
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+body {
+    background: var(--bggardient);
+}
+
+
+.navbar {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: var(--Snigle-font);
+    background-color: #020605;
+}
+
+.navbar img {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbar .input-group {
+    justify-content: center;
+}
+
+.navbar .col-lg-4 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.col-lg-4,
+#login+#signin {
+    text-align: center;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+#signin:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+#login:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+#login:active {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+.navbar {
+    align-content: center;
+}
+
+header button {
+    background: var(--bggardient);
+    margin-top: 4.5px;
+}
+
+.nav-bar {
+    background-color: #020806;
+}
+
+.nav-bar a {
+    color: whitesmoke;
+    font-family: var(--Snigle-font);
+}
+
+.nav-bar a:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+.container {
+    font-family: var(--Poppins);
+}
+
+h1 {
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.image {
+    margin-top: 30%;
+}
+
+.image img {
+    width: 50vmin;
+    height: 50vmin;
+}
+
+.login {
+    padding: 4% 4% 4% 4%;
+    border-radius: 4px;
+    margin-top: 23%;
+    margin-bottom: 23.5%;
+    background-color: white;
+}
+
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.forbtn {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.logbtn {
+    color: whitesmoke;
+    background-color: #4CAF50;
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 3px;
+    border: #4CAF50;
+}
+
+.logbtn:hover {
+    opacity: 0.8;
+}
+
+span .psw {
+    padding-top: 5%;
+    padding-right: 30%;
+
+}
+
+.newhere {
+    padding-top: 5%;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.885);
+    overflow-x: hidden;
+    padding: 2vmin 2vmin;
+}
+
+#foots h1 {
+    color: whitesmoke;
+}
+
+#foots p {
+    color: whitesmoke;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggardient);
+    border: none;
+}
+
+footer .column i+i {
+    padding: 0.05em;
+}

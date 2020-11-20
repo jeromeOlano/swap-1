@@ -1,0 +1,115 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --Poppins: "Poppins", cursive;
+    --light-black: #2e2c2caf;
+    --bggardient: linear-gradient(to bottom,
+            #28febd,
+            #1db688);
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+.navbar {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: var(--Snigle-font);
+    background-color: #020605;
+}
+
+.navbar img {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbar .input-group {
+    justify-content: center;
+}
+
+.navbar .col-lg-4 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.col-lg-4,
+#login+#signin {
+    text-align: center;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+#signin:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+#login:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+.navbar {
+    align-content: center;
+}
+
+header button {
+    background: var(--bggardient);
+}
+
+.nav-bar {
+    background-color: #020806;
+}
+
+.nav-bar a {
+    color: whitesmoke;
+    font-family: var(--Snigle-font);
+}
+
+.nav-bar a:hover {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+.nav-bar .active {
+    color: #19e6bd;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 1000px;
+    background-color: rgba(0, 0, 0, 0.885);
+    overflow-x: hidden;
+    padding: 2vmin 2vmin;
+}
+
+#foots h1 {
+    color: whitesmoke;
+}
+
+#foots p {
+    color: whitesmoke;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggardient);
+    border: none;
+}
+
+footer .column i+i {
+    padding: 0.05em;
+}
