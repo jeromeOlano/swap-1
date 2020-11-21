@@ -26,7 +26,7 @@ body {
 .navbar {
     color: whitesmoke;
     font-weight: bold;
-    font-family: var(--Snigle-font);
+    font-family: var(--Poppins);
     background-color: #020605;
 }
 
@@ -79,7 +79,6 @@ body {
 
 header button {
     background: var(--bggardient);
-    margin-top: 4.5px;
 }
 
 .nav-bar {
@@ -122,12 +121,12 @@ h1 {
     background-color: white;
 }
 
-
-input[type=text],
-input[type=password] {
+.container input[type=text],
+.container input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
+    border-radius: 25px;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -140,22 +139,31 @@ input[type=password] {
 
 .logbtn {
     color: whitesmoke;
-    background-color: #4CAF50;
+    background-color: #0f5b44;
     width: 70%;
     padding-top: 2%;
     padding-bottom: 2%;
-    border-radius: 3px;
-    border: #4CAF50;
+    border-radius: 20px;
+    border: #0f5b44;
 }
 
 .logbtn:hover {
     opacity: 0.8;
 }
 
+.login {
+    background: var(--bggardient);
+    box-shadow: 10px 10px 5px grey;
+}
+
 span .psw {
     padding-top: 5%;
     padding-right: 30%;
 
+}
+
+span a {
+    color: darkmagenta;
 }
 
 .newhere {
