@@ -26,11 +26,12 @@ main {
     padding-top: 5%;
 }
 
+/*nav on the logo and search bar*/
 .navbar {
     color: whitesmoke;
     font-weight: bold;
-    font-family: var(--Snigle-font);
-    background-color: #020605;
+    font-family: var(--Poppins);
+    background-color: #121212;
 }
 
 .navbar img {
@@ -71,7 +72,7 @@ main {
     text-decoration: underline;
 }
 
-#login:active {
+.navbar #signin {
     color: #19e6bd;
     text-decoration: underline;
 }
@@ -84,13 +85,14 @@ header button {
     background: var(--bggardient);
 }
 
+/*nav in the home button */
 .nav-bar {
-    background-color: #020806;
+    background-color: #121212;
 }
 
 .nav-bar a {
     color: whitesmoke;
-    font-family: var(--Snigle-font);
+    font-family: var(--Poppins);
 }
 
 .nav-bar a:hover {
@@ -98,7 +100,7 @@ header button {
     text-decoration: underline;
 }
 
-
+/*the main content of the page*/
 .container {
     font-family: var(--Poppins);
 }
@@ -161,6 +163,7 @@ p a {
     color: darkmagenta;
 }
 
+/*for footer*/
 footer {
     background-color: rgba(0, 0, 0, 0.885);
     overflow-x: hidden;

@@ -18,11 +18,12 @@
     --light-gray: rgba(255, 255, 255, 0.877);
 }
 
+/*nav on the logo and search bar*/
 .navbar {
     color: whitesmoke;
     font-weight: bold;
-    font-family: var(--Snigle-font);
-    background-color: #020605;
+    font-family: var(--Poppins);
+    background-color: #121212;
 }
 
 .navbar img {
@@ -71,13 +72,15 @@ header button {
     background: var(--bggardient);
 }
 
+/*nav on home button*/
+
 .nav-bar {
-    background-color: #020806;
+    background-color: #121212;
 }
 
 .nav-bar a {
     color: whitesmoke;
-    font-family: var(--Snigle-font);
+    font-family: var(--Poppins);
 }
 
 .nav-bar a:hover {
@@ -90,6 +93,7 @@ header button {
     text-decoration: underline;
 }
 
+/*for footer*/
 footer {
     margin-top: 1000px;
     background-color: rgba(0, 0, 0, 0.885);
