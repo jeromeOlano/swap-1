@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +31,8 @@
       </div>
       
       <div class=" col-lg-4 col-md-4 col-sm-12">
-          <a id="login" href="login.html">Log In</a>
-          <a id="signin" href="signup.html">Sign Up</a>
+          <a id="login" href="login.php">Log In</a>
+          <a id="signin" href="signup.php">Sign Up</a>
         
       </div>
     </nav>
@@ -63,21 +67,31 @@
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="login">
               <h1>Login</h1>
-              <label for="uname">Username</label>
-              <input type="text" placeholder="Username" name="uname" required>
+              <form action="php/login_functionality.php" method="POST">
+                <?php
+                  if(isset($_SESSION["error"]))
+                  {
+                    echo "<p style= color:red ;>$_SESSION[error]</p>";
+                  }
+                  unset($_SESSION["error"]);
+                ?>
 
-              <label for="pass">Password</label>
-              <input type="password" placeholder="Password" name="pass" required>
+                <label for="uname">Username</label>
+                <input type="text" placeholder="Username" name="username" required>
 
-              <span class="psw">Forgot <a href="#">password?</a></span>
+                <label for="pass">Password</label>
+                <input type="password" placeholder="Password" name="password" required>
 
-              <div class="forbtn">
-                <button type="submit" class="logbtn">Log in</button>
-              </div>
+                <span class="psw">Forgot <a href="#">password?</a></span>
 
-              <div class="newhere">
-               <span>New in this site? <a href="signup.html">click here</a> to Sign up</span>
-              </div>
+                <div class="forbtn">
+                  <button type="submit" class="logbtn">Log in</button>
+                </div>
+
+                <div class="newhere">
+                <span>New in this site? <a href="signup.html">click here</a> to Sign up</span>
+                </div>
+              </form>
 
             </div>
           </div>

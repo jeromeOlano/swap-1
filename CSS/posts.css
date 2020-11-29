@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 :root {
@@ -84,9 +85,89 @@ header button {
     text-decoration: underline;
 }
 
+/*for main*/
+
+main {
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-1 {
+    padding-top: 4%;
+    text-align: center;
+    background: var(--bggardient);
+    padding: 2% 0 2% 0;
+    box-shadow: 15px 15px 8px grey;
+    border-radius: 10px;
+}
+
+.container-1 input[type=text] {
+    width: 50%;
+    text-align: center;
+    margin-top: 3%;
+    font-family: var(--Rubik);
+    background: #f1f1f1;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+
+.container-1 textarea[type=text] {
+    margin-top: 2%;
+    resize: none;
+    background: #f1f1f1;
+    border: 1px solid gray;
+    width: 100%;
+    font-family: var(--Rubik);
+}
+
+.postbtn button {
+    border: #0f5b44;
+    background-color: #0f5b44;
+    width: 80px;
+    font-family: var(--Poppins);
+    border-radius: 20px;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.postbtn:hover {
+    opacity: 0.8;
+}
+
+.post:focus {
+    border: none;
+    outline: none;
+}
+
+.cnclbtn button {
+    border: gray;
+    background-color: gray;
+    width: 80px;
+    font-family: var(--Poppins);
+    border-radius: 20px;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.cnclbtn:hover {
+    opacity: 0.8;
+}
+
+.cncl:focus {
+    border: none;
+    outline: none;
+}
+
+.cnclbtn,
+.postbtn {
+    text-align: right;
+}
+
 /*for footer*/
 footer {
-    margin-top: 1000px;
     background-color: rgba(0, 0, 0, 0.885);
     overflow-x: hidden;
     padding: 2vmin 2vmin;
@@ -94,6 +175,7 @@ footer {
 
 #foots h1 {
     color: whitesmoke;
+    overflow-y: hidden;
 }
 
 #foots p {

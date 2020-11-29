@@ -11,6 +11,7 @@
         <link rel="icon" href="./image/white_logo.webp"/> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/1fb0c16617.js" crossorigin="anonymous"></script>
+        <script defer src="script.js"></script>
         <title>SWAP</title>
     </head>
 
@@ -32,8 +33,8 @@
           </div>
           
           <div class=" col-lg-4 col-md-4 col-sm-12">
-              <a id="login"  href="login.html">Log In</a>
-              <a id="signin"class="active" href="signup.html">Sign Up</a>
+              <a id="login"  href="login.php">Log In</a>
+              <a id="signin"class="active" href="signup.php">Sign Up</a>
             
           </div>
         </nav>
@@ -66,50 +67,69 @@
                         if(isset($_SESSION["error"]))
                         {
                           $error = $_SESSION["error"];
-                          for($i = 0;< $i sizeof($error); $i++)
+                          for($i = 0; $i < sizeof($error); $i++)
                           {
-                            echo "<div style="color: white; background-color: #e74c3c; padding-left: 10px;"><p>&#9888 $error[$i]</p></div>";
+                            echo "<div style='color: white; background-color: #e74c3c; padding-left: 10px;'><p>&#9888 $error[$i]</p></div>";
                           }
                           session_unset();
                         }
                     ?>
-
-                    <form action="php/sign_up.php" method="POST">
-                      
+                    <div id="error"></div>
+                    <form class="form" action="php/signup_function.php" method="POST" id="form" enctype="multipart/form-data">
+                    
+                    <div>
                       <label for="fname">First Name</label>
-                      <input type="text" placeholder="First Name" name="fname" required>
-                      
+                      <input id="name" type="text" placeholder="Enter your First Name" name="fname" >
+                    </div>
+
+                    <div>
                       <label for="lname">Last Name</label>
-                      <input type="text" placeholder="Last Name" name="lname" required>
+                      <input id="name" type="text" placeholder="Enter your Last Name" name="lname">
+                    </div>
                       
+                    <div>
                       <label for="gender">Sex</label>
                       <select name="gender" id="gender">
                           <option disabled hidden selected>Sex</option>
                           <option value="Male">Male</option>
                           <option value="Female">Female</option>
                       </select>
+                    </div>
 
+                    <div>
                       <label for="uname">Username</label>
                       <input type="text" placeholder="Username" name="uname" required>
-                      
+                    </div>
+
+                    <div>
                       <label for="add">Address</label>
                       <input type="text" placeholder="Address" name="add" required>
-                      
+                    </div>
+
+                    <div>
                       <label for="con-no">Contact Number</label>
-                      <input type="text" placeholder="Contact Number" name="con-no" required>
-                      
+                      <input type="text" placeholder="Enter your 11-digit number" name="con-no" pattern="[0-9]{11}" required>
+                    </div>
+
+                    <div>
                       <label for="email">Email</label>
                       <input type="email" placeholder="Email" name="email" required>
-                      
-                      <label for="password">Password</label>
-                      <input type="password" placeholder="Password" name="password" size="25" required>
-                      
-                      <label for="conpas">Confirm Password</label>
-                      <input type="password" placeholder="Confirm Password" name="conpas" size="25" required>
-                      
-                      <label for="val">Valid Id</label>
-                      <input type="file" placeholder="Valid Id" name="val">
+                    </div>
 
+                    <div>
+                      <label for="password">Password</label>
+                      <input id="password" type="password" placeholder="Password" name="password" required>
+                    </div>
+
+                    <div>
+                      <label for="conpas">Confirm Password</label>
+                      <input id="password" type="password" placeholder="Confirm Password" name="con-pas" required>
+                    </div>
+
+                    <div>
+                      <label for="val">Valid Id</label>
+                      <input type="file" placeholder="Valid Id" name="file">
+                    </div>
                       
                     
                     

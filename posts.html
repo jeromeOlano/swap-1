@@ -57,16 +57,47 @@
           </nav>
         </div>  
       </header>
-    
+
+      <main>
+        <div class="container-1 mx-auto col-lg-9 col-md-9 col-sm-12">
+          <div class="row mx-auto justify-content-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <form id="form-1" method="POST">
+                
+                <div>
+                  <input type="file" name="imagefile" required>
+                </div>
+
+                <div>
+                  <input type="text" id="item_name" name="item_name" placeholder="Item's Name" required>
+                </div>
+
+                <div>
+                  <textarea type="text" id="description" name="description" rows="5" class="form-control md-textarea" placeholder="item's description (state of item, parts, damage if it has, etc..)"></textarea>
+                </div>
+
+                <div class="postbtn">
+                  <button class="post" type="submit">post</button>
+                </div>
+
+                <div class="cnclbtn">
+                  <button class="cncl" type="button">cancel</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+     </main>
       <footer>
         <div id="foots">
-        <div class="container-fluid p-0">
-          <div class="row text-left mx-auto">
-            <div class="col-md-6">
+        <div class="container-fluid justify-content-center p-0">
+          <div class="row mx-auto">
+            <div class="col-md-6 col-sm-12">
               <h1 class="text-dark">About Us</h1>
               <p class="text-muted">Swap website is created to let our User experience the new way of barter and making sure that they are at ease when using Swap by ensuring their safety, security, and mostly, to give them a convinient service at all times!</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <p class="pt-4 text-muted justify-content-center">Swap &copy2020  All Rights Reserved </p>
             </div>
         </div>
